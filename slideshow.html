@@ -7,20 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name= "author" content="Cat Meza U">
 
-    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-    <!-- would love to be able to have text on the side kind of like an image id?
-     but it stays the entire time + so I can then include more info about the challenge
-      + where to find more art, etc-->
+  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="rules.css" rel="stylesheet">
 
     <style>
       body {
-        font-family: Verdana, sans-serif;
+      background-position: bottom right;
       }
       .mySlides {
         display: none;
       }
       img {
-        vertical-align: middle;
+        vertical-align: left;
       }
 
       /* Slideshow container */
@@ -49,6 +64,21 @@
           opacity: 1;
         }
       }
+
+      .boxRight {
+        margin: 15px;
+        padding: 15px;
+        background-color: plum;
+        width:315px;
+        float: right;
+      }
+
+      .boxHeader {
+      margin: auto;
+      width:300px;
+      float: right;
+      }
+
     </style>
   </head>
 
@@ -145,7 +175,14 @@
       <div class="mySlides fade">
         <img src="conceptober2020/day31.png" style="width:55%" alt="Day 31 of Conceptober: Hacker. A person sits on a bed, typing on a computer. They have a twizzler in their mouth and a package of twizzlers at their feet." />
       </div>
+    </div>
+    
+    <div class="boxHeader">
+      <h1> Conceptober 2020</h1>
+    </div>
 
+    <div class="boxRight">
+      <p> I am putting words here! Here's a bunch of words that will later be filled in. I am putting words here! Here's a bunch of words that will later be filled in.I am putting words here! Here's a bunch of words that will later be filled in.I am putting words here! Here's a bunch of words that will later be filled in. I am putting words here! Here's a bunch of words that will later be filled in. I am putting words here! Here's a bunch of words that will later be filled in.I am putting words here! Here's a bunch of words that will later be filled in. </p>
     </div>
 
     <script>
