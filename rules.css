@@ -1,7 +1,6 @@
 * {box-sizing: border-box;}
 
 body {
-	background-image: url(shock.png);
 	background-color: #F2BEE4;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -9,9 +8,12 @@ body {
 	font-family: "open-dyslexic", "OpenDyslexic", sans-serif;
 	position: relative;
 	margin: 0;
-	padding-bottom: 6em;
-	min-height: 100%;
+	padding-bottom: 6px;
 		}
+
+h1 {
+	margin: 10px;
+}
 
 #container {
 	max-width: 90%;
@@ -30,22 +32,6 @@ body {
 hr {border: 1px solid purple;
 	background-color: purple; }
 
-header {
-	padding: 0.5em;
-	background-bottom: 1px solid purple;
-	background-image: url(eye.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	text-align: center;
-	/*position: fixed;
-	margin: 0;
-	top: 0;
-	left: 0;
-	width: 100vw;*/
-	margin: auto;
-	margin-top: 0;
-} 
-
 main {
   float: left;
   width: 65%;
@@ -62,7 +48,6 @@ aside {
   margin: 0px;
 }
 
-
 a {
   font-weight: bold;
   color: purple;
@@ -72,7 +57,6 @@ a {
 a:hover {
   color: violet;
 }
-
 
 html {scroll-behavior: smooth; }
 	p { line-height: 1.5em; }
@@ -143,7 +127,7 @@ html {scroll-behavior: smooth; }
 		display: none;
 		position: absolute;
 		min-width: 10em;
-		background-color: #f9f9f9;
+		background-color: #91AAF2;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 		z-index: 20;
 		}
@@ -162,3 +146,51 @@ html {scroll-behavior: smooth; }
 	@media screen and (max-width: 600px) {
 		body { background-color: black; color: white; }
 		}
+
+.corner {
+	bottom: 0px;
+	margin: 10px;
+	right: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+.video {
+	width: 25%;
+	margin: 10px;
+}
+
+#outer_wrapper {  
+    overflow: scroll;
+    overflow-y: hidden;
+    display: hidden;
+    width:100%;
+}
+#outer_wrapper #inner_wrapper {
+    width:5755px; /* If you have more elements, increase the width accordingly */
+}
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+    width: 250px;
+    height:445px;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #91AAF2 #F2BEE4;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #F2BEE4;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #91AAF2;
+  border-radius: 20px;
+  border: 2px solid #F2BEE4;
+}

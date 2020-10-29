@@ -9,28 +9,37 @@
 		<title>MEDP 285 Homepage</title>
 
 		<link href="rules.css" rel="stylesheet">
-
-
-	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-	<link rel="manifest" href="icon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-
-
+		<link href="icon.html">
 		<link href="https://www.1001freefonts.com/open-dyslexic.font" rel="stylesheet">
+
+	<style>
+		header {color: #AFA7FF;
+	padding: 0.5em;
+	background-bottom: 1px solid purple;
+	background-image: url(eye.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	/*position: fixed;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100vw;*/
+	margin: auto;
+	margin-top: 0;
+} 
+body {
+	background-image: url(shock.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6px;
+	min-height: 100%;
+		}
+	</style>
+
 	</head>
 
 	<body>
@@ -40,8 +49,15 @@
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="https://mezacreates.wixsite.com/medp285" target="_blank">Blog</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li class="dropdown"><a>Projects</a>
+         <div class="dropdown-content">
+			<a href="slideshow.html"> Slideshow </a>
+           <a href="video.html"> Video </a>
+           <a href="collage.html"> Collage </a>
+           <a href="grid.html"> Grid </a>
+           <a href="animation.html"> Animation </a>
+         </div> </li>
+        	<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -76,7 +92,7 @@
 			<a href= "video.html" target="_blank"> Video Project </a>
 			<p> Video series; timelapse videos of my art! </p>
 			<a href= "collage.html" target="_blank"> Collage Project </a>
-			<p> A collage of several of my art pieces. </p>
+			<p> A space collage. </p>
 		</section>
 		</div> <!--closes main div-->
 
