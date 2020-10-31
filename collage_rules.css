@@ -5,6 +5,12 @@ body {
   background-size: contain;
   background-attachment: fixed;
   background-position: center;
+  font-family: "OpenDyslexic-Regular";
+}
+
+@font-face {
+  font-family: OpenDyslexic-Regular;
+  src: url(OpenDyslexic-Regular.otf);
 }
 
 img:hover {
@@ -169,24 +175,25 @@ img:hover {
   margin: 10px;
   position: fixed;
   top: 450px;
-  left: 400px; 
+  left: 10px; 
 }
 
 
 .poem {
   margin: 10px;
   position: fixed;
-  top: 315px;
+  bottom: 80px;
   right: 30px;
   text-align: center;
   color: white;
   z-index: 2;
+  padding: 0 0 0 0;
 }
 
 .poem_back {
-  margin: 10px;
+  margin: 5px;
   position: fixed;
-  top: 315px;
+  bottom: 0px;
   right: 40px;
   opacity:0.4;
   z-index: 1;
@@ -196,7 +203,7 @@ img:hover {
   margin: 10px;
   position: fixed;
   top: 450px;
-  left: 10px; 
+  left: 500px; 
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1)
 }
