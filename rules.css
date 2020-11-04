@@ -146,9 +146,9 @@ html {scroll-behavior: smooth; }
 
 	.dropdown:hover .dropdown-content {display: block;}
 
-	@media screen and (max-width: 600px) {
-		body { background-color: black; color: white; }
-		}
+	/* @media screen and (max-width: 600px) {
+		body { background-color: purple; color: black; }
+		} */
 
 .corner {
 	bottom: 0px;
