@@ -1,6 +1,8 @@
 * {box-sizing: border-box;}
 
-cursor: url()
+html {
+  cursor: url("icon/favicon.ico"), default;
+}
 
 body {
 	background-color: #F2BEE4;
