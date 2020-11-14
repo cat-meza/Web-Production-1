@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> Choose Your Own Adventure </title>
+	<meta name="description" content="Mini choose your own adventure game!">
+	<meta name= "author" content="Cat Meza U.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="rules.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+<style>
+	body {margin: 2em;}
+	button {
+	background-color: #91AAF2;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+	position: relative;
+	margin: 0;
+	font-family: "OpenDyslexic-Regular";
+	padding-bottom: 6px;
+	/*border: solid royalblue; */
+}
+</style>
+
+</head>
+
+<body>
+	<div id="question"> <br> </div>
+	<div> <p> Choose: </p> </div>
+	<div id="answers"> <br> </div>
+  <div class="corner2">
+  <a href="index.html" target="_blank">
+  <img border="0" alt="Return to Home" src="shock.png" width="90" height="90">
+  </div>
+
+    <div class="corner">
+  <a href="https://www.etsy.com/shop/MezaCreates" target="_blank">
+  <img border="0" alt="Etsy" src="blue.png" width="90" height="90">
+  </div>
+
+    <div class="middle" target="_blank">
+  <a href="https://www.instagram.com/meza_creates/" target="blank">
+  <img border="0" alt="Instagram" src="pink.png" width="90" height="90">
+  </div>
+
+<script>
+	var db = [{ //this is 0
+    "question": " Wanna go on an adventure? ",
+    "answers": [{ 
+        "title": "Sure",
+        "response": 1
+      },
+      {
+        "title": "Nah",
+        "response": 2
+      }
+    ]
+  },
+  { //this is 1
+    "question": "Nice! Ok first things first, there's a crisp, autumn leaf right at your feet. What do you want to do?",
+    "answers": [{
+      "title": "Eat it",
+      "response": 3
+    },
+    {
+    	"title": "Treasure it",
+    	"response": 11
+    },
+
+    {
+    	"title": "Step on it",
+    	"response": 18
+    }
+    ]
+  },
+  { // this is 2
+    "question": "Ok! Let's go home and consume some content instead.",
+    "answers": [
+	{
+      "title": "Books",
+      "response": 24
+    },
+
+    {
+    	"title": "Shows",
+    	"response": 25
+    },
+
+    {
+    	"title": "Games",
+    	"response": 26
+    },
+
+    {
+    	"title": "Music",
+    	"response": 27
+    }
+    ]
+  },
+  { //this is 3
+    "question": "Gross. That was on the floor, you know. Lettuce is a perfectly good alternative to... like... Floor Leaf. Let’s get some.",
+    "answers": [{
+        "title": "Head to store",
+        "response": 4
+      },
+    ]
+  },
+  { //this is 4
+    "question": "Ok, we’re at the store! Are you gonna buy some lettuce?",
+    "answers": [{
+      "title": "No",
+      "response": 5
+    },
+
+    {
+    	"title": "Ok...",
+    	"response": 8
+    }
+    ]
+  },
+  { //this is 5
+    "question": "You’re just gonna eat leaves off the floor? Is that what you want? How you want to live?",
+    "answers": [{
+      "title": "Don’t shame me",
+      "response": 6
+    },
+    {"title":"No...",
+    "response": 10
+}
+    ]
+  },
+
+ { //this is 6
+    "question": "Ok.",
+    "answers": [{
+      "title": "Ok.",
+      "response": 7
+    }]
+  },
+ { //this is 7
+    "question": "You’ve got leaf stuck in your teeth.",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 8
+    "question": "Great! You’ve bought your Crunchy Lettuce. More sanitary. Let’s make a salad.",
+    "answers": [{
+      "title": "Make a salad",
+      "response": 9
+    }]
+  },
+
+{ //this is 9
+    "question": "It’s a culinary masterpiece. So proud of you.",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 10
+    "question": "Didn't think so. Try again.",
+    "answers": [{
+      "title": "Buy the salad",
+      "response": 8
+    }]
+  },
+
+{ //this is 11
+    "question": "Nice. Let’s go look for some shiny rocks to add to your Nature Collection.",
+    "answers": [{
+      "title": "You find two rocks",
+      "response": 12
+    }]
+  },
+
+{ //this is 12
+    "question": "Which one do you want to keep?",
+    "answers": [{
+      "title": "Round one",
+      "response": 13
+    },
+    {
+      "title": "Pink one",
+      "response": 14
+    },
+    {
+      "title": "Both",
+      "response": 15
+    }
+    ]
+  },
+
+{ //this is 13
+    "question": "Cool! I like the texture.",
+    "answers": [{
+      "title": "Let’s find a cool stick next!",
+      "response": 16
+    }]
+  },
+
+{ //this is 14
+    "question": "It’s sooo pretty.",
+    "answers": [{
+      "title": "Let’s find a cool stick next!",
+      "response": 16
+    }]
+  },
+
+{ //this is 15
+    "question": "What's better than one rock? Two rocks.",
+    "answers": [{
+      "title": "Let’s find a cool stick next!",
+      "response": 16
+    }]
+  },
+
+{ //this is 16
+    "question": "Hell yeah! That one looks solid enough to pretend to use it as a sword.",
+    "answers": [{
+      "title": "I'm cool as hell.",
+      "response": 17
+    }]
+  },
+
+{ //this is 17
+    "question": "A leaf, a rock, and a stick. We’ve done some good work today. ",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 18
+    "question": "C  R O N C H! ASMR vibes. Hey.... that’s not a bad idea actually.",
+    "answers": [{
+      "title": "Become an ASMR youtuber.",
+      "response": 19
+    },
+    {
+      "title": "Pass.",
+      "response": 21
+    }
+    ]
+  },
+
+{ //this is 19
+    "question": "Nice. Let’s go buy a cool mic and some fake nails.",
+    "answers": [{
+      "title": " Uploading video.... ",
+      "response": 20
+    }]
+  },
+
+{ //this is 20
+    "question": "You’re famous now. People fall asleep to your content. If only you weren’t kept awake by the weight of your sins. :) ",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 21
+    "question": "Oh... ok. Didn’t hurt my feelings or anything...",
+    "answers": [{
+      "title": "...",
+      "response": 22
+    }]
+  },
+
+{ //this is 22
+    "question": "...",
+    "answers": [{
+      "title": "...",
+      "response": 23
+    }]
+  },
+
+{ //this is 23
+    "question": "If it’s alright with you, I’m gonna go home now. The vibes are off :/ ",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 24
+    "question": "Grab a hot drink (I like hot chocolate, but do you!) and enjoy your book!!",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 25
+    "question": "It’s nice to destress! Or... intentionally stress yourself out depending on your chosen genre.",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 26
+    "question": "The G in LGBT stands for gaymer!! If you’re cishet that sucks. I don’t have a joke for you. ",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 27
+    "question": "Vibes. Have fun listening to the same 5 songs on repeat!!",
+    "answers": [{
+      "title": "END",
+      "response": 28
+    }]
+  },
+
+{ //this is 27
+    "question": "Oh. Did you want to go again?",
+    "answers": [{
+      "title": "Start over",
+      "response": 0
+    }]
+  },
+
+];
+
+var currentLocation = 0;
+
+window.printCurrentLocation = function() {
+  document.getElementById("question").innerHTML = db[currentLocation].question;
+  var answers = "";
+  for (var i = 0, l = db[currentLocation].answers.length; i < l; i++) {
+    answers += "<p><button onclick='setLocation(" + db[currentLocation].answers[i].response + ")'>" + db[currentLocation].answers[i].title + "</button></p>";
+  }
+  document.getElementById("answers").innerHTML = answers;
+}
+
+window.setLocation = function(num) {
+  currentLocation = num;
+  window.printCurrentLocation();
+}
+
+window.printCurrentLocation();
+</script>
+
+</body>
+
+</html>
+
+<!-- 
+	script:
+	const phrase = prompt("Enter your name!", "");
+	document.write("<p> Hi " + phrase + "!" + "</p>");
+
