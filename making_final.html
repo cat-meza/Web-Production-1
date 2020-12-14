@@ -8,7 +8,7 @@
 	<meta name= "author" content="Cat Meza U">
 	<title>The Making of [NAME] </title>
 
-	<link href="rules.css" rel="stylesheet">
+	<link href="final_grid_rules.css" rel="stylesheet">
 
 	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
@@ -29,70 +29,9 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<style>
-		* {box-sizing: border-box;}
-
 		@media screen and (min-width: 400px;) {
 			#general {  display: grid; width: 50%; grid-template-columns: 200px; }
 		}
-
-		body {text-align: center;} 
-
-		p {padding: 7px;}
-
-		div {border: 1px;
-			text-align: center; }
-
-		#charas {
-			display: grid;
-			width: 750px;
-			grid-template-rows: repeat(6, auto) ;
-			grid-template-columns: repeat(3, 1fr);
-			}
-
-		.item1 {grid-column: 1 / 4;}
-
-		.item7 {grid-column: 1 / 3;}
-
-		#endings {
-			display: grid;
-			width: 500px;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(4, auto);
-			justify-content: center;
-			}
-
-		#general {
-			display: grid;
-			padding-top: 2em;
-			grid-template-columns: repeat(2, auto);
-			grid-template-rows: repeat(2, auto);
-		}
-
-		#icon:hover {-webkit-transform: scaleX(-1); transform: scaleX(-1); }
-
-		#misc {
-			display: grid;
-			width: 750px;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(5, auto);
-			}
-
-		#background {
-			display: grid;
-			width: 500px;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(7, auto);
-			justify-content: center;
-			}
-
-		#videos {
-			display: grid;
-			margin: 1.5em;
-			width: 1200px;
-			grid-template-columns:  repeat(3, 1fr);
-			grid-template-rows: repeat(8, auto);
-			justify-content: center;
-			}
 
 	</style>
 
@@ -102,229 +41,244 @@
 
 <h1> NAME </h1>
 
-<p> ​It's finals week, and you're stressed as shit. You decide to leave your room for the first time in hours, and, depending on your choices, make a life-altering journey. <br> <br>
+<p> ​Welcome! This page details the making of _NAME_, an interactive story about an underwater cave. If you haven't played it yet, click <a href= "https://cat-meza.github.io/Web-Production-1/final.html" target="_blank"> here </a> to do so! You can play as one of three different protagonists. Each route explores a different aspect of worldbuilding! </p> 
 
-This is an interactive story I made for a previous class! The game branches off into three major routes, letting you meet three unique witches. You can romance, befriend, or abandon these characters as you wish! <br>
+<p> Below, you'll find the artwork included in the game, process videos of how I made that art, the code I used to build the game, and more! </p>
 
-Once you've downloaded the file, go inside the folder and run the application. There's also an endings guide included (should be a png file above the application). Have fun and let me know what you think! </p>
+<br>
 
-<iframe src="https://itch.io/embed/652424" height="167" width="552" frameborder="0"> <a href="https://meza-creates.itch.io/the-witchs-hour">The Witch&#039;s Hour by Meza_Creates</a> </iframe>
+<h1> Artwork </h1>
+<div id="art">
 
-<div id="general">
-	<div id="charas">
-		<div class="item1" style="background-color: lavenderblush;"> <h1> Character Sprites </h1> </div>
+		<div class= "box1">
+		<img src="underwater/main1.png" style="width: 100%" alt=""> </div>
 
-		<div style="background-color: rosybrown;"> <h2> Deema </h2> <p> ​This is Deema! Deema's pronouns are ze/hir/hirs. You can explore hir route by going to get food on your first choice! </p> </div>
+		<div class= "box2">
+		<img src="underwater/main2.png" style="width: 100%" alt=""> </div>
 
-		<div style="background-color: burlywood;"> <h2> Lanie </h2> <p> ​​This is Lanie! Lanie's pronouns are she/her/hers. You can explore her route by studying some more on your first choice! </p> </div>
+		<div class= "box"> 
+		<img src="underwater/tsurva.png" style="height:100%" alt=""> </div>
 
-		<div style="background-color: thistle;"> <h2> Lluvia </h2> <p> ​​This is Lluvia! Lluvia's pronouns are xe/xem/xyrs. You can explore xyr route by going somewhere to relax on your first choice! </p> </div>
+		<div class= "box"> 
+		<img src="underwater/ronen.png" style="height:100%" alt=""> </div>
 
-		<div style="background-color: rosybrown;">
-		<img src="images/deema-happy.png" style="width:100%" alt=""> </div>
+		<div class= "box"> 
+		<img src="underwater/sasa.png" style="height:100%" alt=""> </div>
 
-		<div style="background-color: burlywood;">
-		<img src="images/lanie-smile.png" style="width: 100%" alt=""> </div>
+		<div class= "box"> 
+		<img src="underwater/bg1.png" style="width:100px" alt=""> </div>
 
-		<div style="background-color: thistle;"> 
-		<img src="images/lluvia-smile.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: rosybrown;"> 
-		<img src="images/deema-neutral.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: burlywood;"> 
-		<img src="images/lanie-neutral.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: thistle;"> 
-		<img src="images/lluvia-neutral.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: rosybrown;"> 
-		<img src="images/deema-bag.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: burlywood;"> 
-		<img src="images/lanie-timid.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: thistle;"> 
-		<img src="images/lluvia-plant.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: rosybrown;"> 
-		<img src="images/deema-wince.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: burlywood;"> 
-		<img src="images/lanie-anxious.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: thistle;"> 
-		<img src="images/lluvia-annoyed.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: rosybrown;"> 
-		<img src="images/deema-upset.png" style="width:100%" alt=""> </div>
-
-		<div style="background-color: burlywood;"> 
-		<img src="images/lanie-blush.png" style="width:100%" alt=""> </div>
+		<div class= "box"> 
+		<img src="underwater/bg.png" style="width:100px" alt=""> </div>
 
 		<div id="icon"> 
 		<a href="index.html" target="_blank">
          <img alt="Return to Home" src="shock.png" height="150" border="0" style="padding-top: 20px">
      	</a>
 		</div>
-	</div>
-	
-	<div id="endings">
-
-  		<div class="item7" style="background-color: lavenderblush;"> <h1> Special Endings </h1> <p> This is art you can unlock with specific route endings. There's 6 special endings in total, and 12 ways to get to the boring end! <br> <br> There's an ending guide in the section below.</p> </div>
-
-  		<div> <img src="images/deema_date.png" style="width:100%" alt=""> </div>
-
-  		<div> <img src="images/deema_friend.png" style="width:100%" alt=""> </div>
-
-  		<div> <img src="images/lanie_date.png" style="width:100%" alt=""> </div> 
-
-  		<div> <img src="images/lanie_friend.png" style="width:100%" alt=""> </div>
-
-  		<div> <img src="images/lluvia_date.png" style="width:100%" alt=""> </div>
-
-  		<div> <img src="images/lluvia_friend.png" style="width:100%" alt=""> </div>
-
-		<div class="item7" > <img src="images/boring-end.png" style="width:100%" alt=""> </div>
-	</div>
-
-	<div id="misc">
-		<div class="item7" style="background-color: lavenderblush;"> <h2> Misc </h2> <p> Any and all other art created for this game! This includes the title page, ending guide, game icon, and other assets. </p> </div>
-
-		<div class="item7"> <img src="images/guide.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/books.png" style="width: 100%" alt=""> </div>
-
-		<div> <img src="images/books-ruined.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/window_icon.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/phone.png" style="width:100%" alt=""> </div>
-
-		<div class="item7"> <img src="images/main_menu2.png" style="width:100%" alt=""> </div>
-	</div>
-
-	<div id="background">
-		<div class="item7" style="background-color: lavenderblush;"> 
-			<h2> Backgrounds </h2> <p> All the backgrounds that can be found in the game </p> 
-		</div>
-
-		<div> <img src="images/bg-potion.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-desk.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-lluvia_room.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-bed.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-bag.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-coffee.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-academy.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-hall.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-riverside.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-street.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-food.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-library.png" style="width:100%" alt=""> </div>
-
-		<div> <img src="images/bg-between.png" style="width:100%" alt=""> </div>
-	</div>
 </div>
 
+<hr>
 <h1> Process </h1>
-​<p> Below you'll find  the sped-up digital painting process of the all the artwork done for this game! Ranging from backgrounds, sprites, assets, and more, you can watch as I pour my sweat and blood into this project. Enjoy! </p>
+​<p> Below you'll find the sped-up digital painting process of the all the artwork done for this game. Enjoy! </p>
 
 <div id="videos">
-	<div> <video controls muted poster="images/deema.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema bag.mp4" type="video/mp4" width=10> </video> </div>
 
-	<div> <video controls muted poster="images/deema.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema neutral.mp4" type="video/mp4" width=10> </video> </div>
+	<div class="box3">
+		<video controls muted poster="underwater/bg.png" loop preload playsinline controlslist="nodownload"> 
+			<source src="underwater/ronen.mp4" type="video/mp4"> 
+		</video>
+	</div>
 
-	<div> <video controls muted poster="images/deema.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema smile.mp4" type="video/mp4" width=10> </video> </div>
+	<div class="box3">
+		<video controls muted poster="underwater/bg.png" loop preload playsinline controlslist="nodownload"> 
+			<source src="underwater/sasa.mp4" type="video/mp4"> 
+		</video> 
+	</div>
 
-	<div> <video controls muted poster="images/deema.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema upset.mp4" type="video/mp4" width=10> </video> </div>
+	<div class="box3">
+		<video controls muted poster="underwater/bg.png" loop preload playsinline controlslist="nodownload"> 
+			<source src="underwater/tsurva.mp4" type="video/mp4"> 
+		</video> 
+	</div>
 
-	<div> <video controls muted poster="images/deema.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema wince.mp4" type="video/mp4" width=10> </video> </div>
+	<div class="box3">
+		<video controls muted poster="underwater/bg.png" loop preload playsinline controlslist="nodownload"> 
+			<source src="underwater/fishies.mp4" type="video/mp4"> 
+		</video> 
+	</div>
 
-	<!--  <div> <video controls muted poster="images/deema.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema all.mp4" type="video/mp4" width=10> </video> </div> -->
+	<div class="box3">
+		<video controls muted poster="underwater/bg.png" loop preload playsinline controlslist="nodownload"> 
+			<source src="underwater/background.mp4" type="video/mp4"> 
+		</video> 
+	</div>
 
-	<div> <video controls muted poster="images/lanie.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie timid.mp4" type="video/mp4" width=10> </video> </div>
+	<!-- 
+	<div class="box3">
+		<video controls muted poster="underwater/bg.png" loop preload playsinline controlslist="nodownload"> 
+			<source src="underwater/fishies.mp4" type="video/mp4"> 
+		</video> 
+	</div>
+	!-->
 
-	<div> <video controls muted poster="images/lanie.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie neutral.mp4" type="video/mp4" width=10> </video> </div>
+	</div>
 
-	<div> <video controls muted poster="images/lanie.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie smile.mp4" type="video/mp4" width=10> </video> </div>
+<hr>
+<h1> Tools Used </h1>
+<p> Artwork: Adobe Illustrator (paid) <br> Videos: Adobe Premiere Pro (paid) <br> Game &#38; Website Coding: HTML, CSS, Javascript. I use Sublime Text (free) as my code editor and Github to host the webpage! </p>
 
-	<div> <video controls muted poster="images/lanie.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie anxious.mp4" type="video/mp4" width=10> </video> </div>
+<h1> Code </h1>
 
-	<div> <video controls muted poster="images/lanie.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie blush.mp4" type="video/mp4" width=10> </video> </div>
+<div id="grid">
+<div>
+	<h2> HTML: </h2> <br>
+	&lt;!DOCTYPE html> <br>
+&lt;html lang="en"> <br>
+ <br>
+&lt;head> <br>
+	&lt;meta charset="utf-8"> <br>
+	&lt;title> Choose Your Own Adventure &lt;/title> <br>
+	&lt;meta name="description" content="Mini choose your own adventure game!"> <br>
+	&lt;meta name= "author" content="YOUR NAME"> <br>
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"> <br>
+ <br>
+	&lt;link href="rules.css" rel="stylesheet"> <br>
+ <br>
+&lt;/head> <br>
+ <br>
+&lt;body> <br>
+ <br>
+	&lt;div id="question"> &lt;br> &lt;/div> <br>
+  &lt;div id="question1"> &lt;br> &lt;/div> <br>
+  &lt;div id="question2"> &lt;br> &lt;/div> <br>
+	&lt;div id="answers"> &lt;br> &lt;/div> <br>
+  <br>
 
-	<!-- <div> <video controls muted poster="images/lanie.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie all.mp4" type="video/mp4" width=10> </video> </div> -->
+  &lt;div class="corner2"> <br>
+  &lt;a href="index.html" target="_blank"> title="Return to Homepage" <br>
+  &lt;img alt="An image of a shark-like mermaid" src="underwater/tsurva.png" height="350"> <br>
+  &lt;/div> <br>
+ <br>
+    &lt;div class="corner"> <br>
+  &lt;a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> title="Etsy" <br>
+  &lt;img alt="An image of a fish-like mermaid" src="underwater/sasa.png" height="350"> <br>
+  &lt;/div> <br>
+ <br>
+    &lt;div class="middle" target="_blank"> title="Instagram" <br>
+  &lt;a href="https://www.instagram.com/meza_creates/" target="blank"> <br>
+  &lt;img alt="An image of a seal-like mermaid" src="underwater/ronen.png" height="350"> <br>
+  &lt;/div> <br>
+ <br>
+&lt;script type="text/javascript" src="final.js">&lt;/script> <br>
+ <br>
+&lt;/body> <br>
+ <br>
+&lt;/html> <br>
 
-	<div> <video controls muted poster="images/lluvia.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lluvia neutral.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/lluvia.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lluvia smile.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/lluvia.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lluvia annoyed.mp4" type="video/mp4" width=10> </video> </div>
-
-	<!-- <div> <video controls muted poster="images/lluvia.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lluvia all.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/all.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/all.mp4" type="video/mp4" width=10> </video> </div> -->
-
-	<div> <video controls muted poster="images/deema_date.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema date.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/deema_friend.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/deema friend.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/lanie_date.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie date.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/lanie_friend.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lanie friend.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/lluvia_date.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lluvia date.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/lluvia_friend.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/lluvia friend.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/boring-end.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/boring cg.mp4" type="video/mp4" width=10> </video> </div>
-
-	<!-- <div> <video controls muted poster="images/all.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/cg all.mp4" type="video/mp4" width=10> </video> </div> -->
-
-	<div> <video controls muted poster="images/bg-academy.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg academy.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-bag.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg bag.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-bed.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg bed.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-between.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg in between.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-coffee.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg coffee.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-desk.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg desk.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-food.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg food.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-hall.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg hall.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-library.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg library.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-potion.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg potion.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-riverside.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg riverside.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/bg-street.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/bg street.mp4" type="video/mp4" width=10> </video> </div>
-
-	<!--  <div> <video controls muted poster="images/all.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/all bg.mp4" type="video/mp4" width=10> </video> </div> -->
-
-	<div> <video controls muted poster="images/books.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/books.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/phone.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/phone.mp4" type="video/mp4" width=10> </video> </div>
-
-	<div> <video controls muted poster="images/main_menu2.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/title page.mp4" type="video/mp4" width=10> </video> </div>
-
-	<!-- <div> <video controls muted poster="images/all.png" loop preload playsinline controlslist="nodownload"> <source src="images/videos/all assets.mp4" type="video/mp4" width=10> </video> </div> -->
 </div>
+
+<div>
+	<h2> HTML Explanation: </h2> <br>
+	<p> 
+		&bull; To see the HTML of a page, right click and press 'view page source'. That'll give you the entire HTML document. You can also right click and press inspect. The top part shows the HTML, and when you hover over parts of the code, the part of the website that it affects will be highlighted. This can help you figure out which parts of the code affect what aspects. <br> <br>
+		&bull; You'll be saving your document as NAME.html (substituting NAME with whatever you want to name it, of course). The ".html" is very important, as it tells your code editor that you're working with HTML as opposed to some other language. <br><br>
+		&bull; In your header, (the part marked by &lt;head>), you can change the title, description content, and author content to fit the page you're creating. Underneath these, I linked my css; you will have to change the href link according to what you name your css document. Similarly, at the bottom of the document, I linked the javascript page. You will also have to change the src to match what you named your javascript document. <br><br>
+		&bull; Think of divs as boxes; say you're trying to organize something really small, like beads or jewelry. You can group certain things together by putting them in boxes, and then putting those boxes in other boxes. Just like when you're organizing, you have to be careful not to overuse divs, but they can be really helpful tools! <br><br>
+		&bull; You can assign attributes to divs by using ids or assigning a class. The main difference between these two is that ids are a specifc to one div element, while class attributes can be assigned to several divs. Both help you apply styling or interactivity to div elements. The ids we assigned to the first four divs correspond to the javascript, and will be explained there. <br><br>
+		&bull; The next three divs- the ones that have class attributes- are the code for displaying the clickable characters at the bottom right of the screen; these characters take you to different links. You can change what link you direct the user to by changing the href. The code 'target="_blank"' ensures that this link opens in a new page; if you simply want to redirect someone, remove that part. The "title" lets your user know where you're directing them. <br><br>
+		&bull; That's just the code for the link; the line of code following that is your image. The "alt" is what will show up if your image isn't working, or if your user is using a screen reader; make sure to include this and provide an adequate description. It doesn't have to be long, just accurate! The "height" is the image's height in pixels. You can adjust for width as well, by adding width="" and placing the value in between the quotes. The source (src) is the most important part, as that's how the code knows what image to retrieve. If you have your images in the same folder as your HTML file, your source can look like this: src="NAME.png" (or .jpg, depending on what you're using). If your images are in a different folder, as mine were, you'll have to specify that by directing the code. The more files it's under, the longer it'll be. For example, src="FILE/FILE/FILE/FILE/NAME.png"  <br><br>
+		&bull; If you want a logo on the corner of your tab, and if you want to be able to change the shape of your cursor, you'll need a favicon. You can generate one using <a href="https://www.favicon-generator.org/" target="_blank"> this website </a>, but remember; always use your own art, art you commissioned, or art with the permission of the artist. Don't steal anyone's art. For a logo, follow the directions on the website; for a cursor change, check out the CSS section. 
+	</p>
+</div>
+
+
+<div>
+	<h2> CSS: </h2> <br>
+</div>
+
+<div>
+	<h2> CSS Explanation: </h2> <br>
+	<p> &bull; Save this document as NAME.css.  <br><br>
+	<p> &bull; "question", "question1", and "question2" are essentially individual paragraphs. It's where you're going to put the text that your player reads as part of the 'main' narrative. You have to write in between the quotes, and you can write as many sentences as you want in each. Keep in mind that these sentences will not have a visual break.  <br><br>
+	<p> &bull; "question", "question1", and "question2" are essentially individual paragraphs. It's where you're going to put the text that your player reads as part of the 'main' narrative. You have to write in between the quotes, and you can write as many sentences as you want in each. Keep in mind that these sentences will not have a visual break.  <br><br>
+
+</div>
+
+<div>
+	<h2> Javascript: </h2> <br>
+
+<p>
+var db = [{ //this is 0 <br>
+    "question": " Welcome to ____! Who do you want to play as?", <br>
+    "question1": " ", <br> 
+    "question2": " ", <br> 
+    "answers": [{ <br> 
+        "title": "Adam, the human", <br>
+        "response": 1 <br> 
+      }, <br> 
+      { <br>
+        "title": "___, the explorer", <br>
+        "response": 1000 <br>
+      }, <br>
+      { <br>
+        "title": "Ula, the jeweler", <br>
+        "response": 50 <br>
+      } <br>
+    ] <br>
+  }, <br>
+  { //this is 1 <br>
+    "question": "TW: This route involves descriptions and discussions of drowning. Do you want to continue?", <br>
+    "question1": "", <br>
+    "question2": "", <br>
+    "answers": [{ <br>
+      "title": "Yes", <br>
+      "response": 2 <br>
+    }, <br>
+    { <br>
+    	"title": "No, take me back to the start", <br>
+    	"response": 0 <br>
+    } <br>
+    ] <br>
+  }, <br>
+]; <br> <br>
+
+
+	var currentLocation = 0; <br>
+
+window.printCurrentLocation = function() { <br>
+  document.getElementById("question").innerHTML = db[currentLocation].question; <br>
+  document.getElementById("question1").innerHTML = db[currentLocation].question1; <br>
+  document.getElementById("question2").innerHTML = db[currentLocation].question2; <br>
+  var answers = ""; <br>
+  for (var i = 0, l = db[currentLocation].answers.length; i < l; i++) { <br> 
+    answers += "&lt;p>&lt;button onclick='setLocation(" + db[currentLocation].answers[i].response + ")'>" + db[currentLocation].answers[i].title + "&lt;/button>&lt;/p>"; <br>
+  } <br>
+  document.getElementById("answers").innerHTML = answers; <br>
+} <br>
+
+window.setLocation = function(num) { <br>
+  currentLocation = num; <br>
+  window.printCurrentLocation(); <br>
+} <br>
+
+window.printCurrentLocation(); <br>
+	</p>
+</div>
+
+<div>
+	<h2> Javascript Explanation: </h2> <br>
+	<p> 
+		&bull; Save this document as NAME.js
+		&bull; "question", "question1", and "question2" are essentially individual paragraphs. It's where you're going to put the text that your player reads as part of the 'main' narrative. You have to write in between the quotes, and you can write as many sentences as you want in each. Keep in mind that these sentences will not have a visual break. When you're writing the narrative, remember that you only have space for three paragraphs. If you want to add more, you'll have to create a new div in your HTML and assign it a new id ("question3" if you're looking for consistency) and also include it in each section, as well as adding it to the function at the bottom. You would add the following:   document.getElementById("question3").innerHTML = db[currentLocation].question3; . If you only want to show one line's worth of text, you have to put a space in between the quotes, otherwise the javascript won't work. <br><br>
+		&bull; The answers will show up as buttons that you can click to lead you to different text. All of the answer choices are wrapped in between these symbols [ ], and further, each individual answer is wrapped as so {} adding a comma for any additional choices. The 'response' is what will actually lead you to your choice. You have to imput a number, or the code won't work. If you don't know what number to use yet, put a placeholder like 1000, as I did in the example. The entirety of the text being displayed on-screen (the "question" and the "answers") are wrapped in {}, and just like with the answers, to make more options, you have to put a comma after. When you're done with all of it, place "];" at the end. <br><br>
+		&bull; The part that follows is what actually makes the code run. Essentially, you're using a variable (var db from the beginning of the code- your entire narrative is that variable). The browser is being told to print the 'current location', which initially is zero (that's why we start at zero in the first line). It prints all the questions, and then all the answers. Then, it converts our variable into a number before adding one to it. So, for every successful run through the text, it will add one, and then print the next iteration. It's incredibly helpful to mark for yourself what number you're at, as you will have to reference this number in your choices. Your file can get very long depending on how much you're writing, so you won't be able to tell just by looking. We can do that by adding a comment, using two backward slashes as so //COMMENT. You can see I've done so in the example. <br><br>
+		&bull; Every part of this has to be present in your javascript document, and filled in, or you will break the code.
+	</p>
+</div>
+
+</div>
+
 
 </body>
 </html>
