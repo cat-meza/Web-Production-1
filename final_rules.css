@@ -250,13 +250,6 @@ audio {
 	font-size: 13px;
 }
 
-  body {
-    background-color: green;
-    color: green;
-  }
-
-  p {color: green;}
-
 	  /* Hide scrollbar for Chrome, Safari and Opera */
 	*::-webkit-scrollbar {
 	  display: none;
