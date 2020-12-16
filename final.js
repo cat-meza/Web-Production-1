@@ -592,8 +592,8 @@
 
 { //this is 54
     "question": "She demanded more stories of Dzli, the mighty. An (in)famous explorer of several generations past, Tsurva ate up every legend, every word uttered about her, roaring in laughter and listening raptly. ",
-    "question1": "Her favorite story had been the one where ___ battled ______. ",
-    "question2": "Yours was _______.  ",
+    "question1": " ",
+    "question2": " ",
     "answers": [{
       "title": "As you finished up, your entertainer had one more story for you. ",
       "response": 55
@@ -715,7 +715,7 @@
     "question1": " ",
     "question2": " ",
     "answers": [{
-      "title": "_______ ",
+      "title": "Her <em> arm</em>. ",
       "response": 67
     }]
   },
