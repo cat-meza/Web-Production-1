@@ -1,17 +1,17 @@
 	var db = [{ //this is 0
-    "question": " Welcome to ____! Who do you want to play as?",
+    "question": " Welcome to <em>Submerged</em> ! Who do you want to play as?",
     "question1": " ",
     "question2": " ",
     "answers": [{ 
-        "title": "Adam, the human",
+        "title": "Adam, the human (he/him/his)",
         "response": 1
       },
       {
-        "title": "___, the explorer",
-        "response": 1000
+        "title": "Vari, the explorer (she/her/hers)",
+        "response": 100
       },
       {
-        "title": "Ula, the jeweler",
+        "title": "Ula, the jeweler (ey/em/eirs)",
         "response": 50
       }
     ]
@@ -66,7 +66,7 @@
     "question1": "You can’t die yet, you have to get back home!",
     "question2": " ",
     "answers": [{
-      "title": "Boyfriend's name....",
+      "title": "Steve....",
       "response": 6
     }
     ]
@@ -448,7 +448,7 @@
 
 { //this is 41
     "question": "“I’ll explain tomorrow, I promise. Right now I just want to shower and go to bed. Cuddle.” ",
-    "question1": "Your boyfriend hums in approval, giving you another peck before you briefly part ways.  ",
+    "question1": "Steve hums in approval, giving you another peck before you briefly part ways.  ",
     "question2": " ",
     "answers": [{
       "title": "Warm water only, please. ",
@@ -498,6 +498,10 @@
     "answers": [{
       "title": "The End! ",
       "response": 100000
+    },
+    {
+      "title": "Start Over. ",
+      "response": 0
     }]
   },
 
@@ -508,12 +512,17 @@
     "answers": [{
       "title": "The End! ",
       "response": 10000
-    }]
+    },
+    {
+      "title": "Start Over. ",
+      "response": 0
+    }
+    ]
   },
 
 { //this is 47
     "question": "You nod. ",
-    "question1": "“If you guys are alright with it, I am. I’d do anything for ____.” ",
+    "question1": "“If you guys are alright with it, I am. I’d do anything for Steve.” ",
     "question2": "“Ok then. On the count of three, raise your hand for yes. One... Two... Three...” ",
     "answers": [{
       "title": "Vote ",
@@ -526,7 +535,7 @@
     "question1": "“I’m sorry, Sasa. It’s for love.” Ronen speaks gently, flippers settling on hir forearms. Sasa’s jaw is set in anger, but ze closes hir eyes and attempts to relax. After a second, ze opens them again and whispers something to Ronen. ",
     "question2": "You turn away slightly to give them privacy, eyes meeting with Tsurva. She fake gags in your direction, and you stifle a soft laugh. ",
     "answers": [{
-      "title": "TEXT HERE ",
+      "title": "Strengthen your resolve.",
       "response": 49
     }]
   },
@@ -537,7 +546,7 @@
     "question2": " ",
     "answers": [{
       "title": "Adventure! ",
-      "response": 10000
+      "response": 101
     }]
   },
 
@@ -566,7 +575,7 @@
     "question1": "Together, you and the stranger talked through nir expectations for the piece. You delighted in making Tsurva swim around fixing up the space while you chatted, sending each other dirty glares when the trader wasn’t looking. ",
     "question2": " ",
     "answers": [{
-      "title": "Ne never noticed ",
+      "title": "Ne never noticed. ",
       "response": 53
     }]
   },
@@ -582,7 +591,7 @@
   },
 
 { //this is 54
-    "question": "She demanded more stories of ___, the ____. An (in)famous explorer of several generations past, Tsurva ate up every legend, every word uttered about her, roaring in laughter and listening raptly. ",
+    "question": "She demanded more stories of Dzli, the mighty. An (in)famous explorer of several generations past, Tsurva ate up every legend, every word uttered about her, roaring in laughter and listening raptly. ",
     "question1": "Her favorite story had been the one where ___ battled ______. ",
     "question2": "Yours was _______.  ",
     "answers": [{
@@ -592,7 +601,7 @@
   },
 
 { //this is 55
-    "question": "“Have you two heard of the __cave__?” Ne had asked. There was a shift in nir tone that you hadn’t missed. ",
+    "question": "“Have you two heard of Sagandzuri?” Ne had asked. There was a shift in nir tone that you hadn’t missed. ",
     "question1": "You and Tsurva looked at each other, leaning in closer to the trader. ",
     "question2": "“Tell us.” ",
     "answers": [{
@@ -602,9 +611,9 @@
   },
 
 { //this is 56
-    "question": "“There are several legends about it, but it’s getting late, so I’ll tell you only two.” Ne began. “The one thing everyone can agree on is the existence of _cave_, and the wonders inside. I think you in particular would love it, Ula; it’s filled with all the beauties of the sea, gold and gems and trinkets that would make the conch pale in comparison. You’d be able to make masterpieces with the treasures that cave contains.”  ",
+    "question": "“There are several legends about it, but it’s getting late, so I’ll tell you only two.” Ne began. “The one thing everyone can agree on is the existence of Sagandzuri, and the wonders inside. I think you in particular would love it, Ula; it’s filled with all the beauties of the sea, gold and gems and trinkets that would make the conch pale in comparison. You’d be able to make masterpieces with the treasures that cave contains.”  ",
     "question1": "Your fingers twitched by your side, but you didn’t dare interrupt. ",
-    "question2": "“They say it’s located between ____ and _____, past the _____. Some say these are metaphors, that as vast as the sea is, if all these existed together, we’d know about it. Others say it’s arrogant to underestimate the sea.” ",
+    "question2": "“They say it’s located between Stargazer Valley and Eshavul Volcano, past the binicles. Some say these are metaphors, that as vast as the sea is, if all these existed together, we’d know about it. Others say it’s arrogant to underestimate the sea.” ",
     "answers": [{
       "title": "Ne flashes you a grin. ",
       "response": 57
@@ -612,17 +621,17 @@
   },
 
 { //this is 57
-    "question": "“Who discovered the cave, kept up the traps? Who gave it its’ name? How did the riches of the ocean end up in one place? No one knows. One legend involves the ___.” ",
-    "question1": "The ___ were part of one of the previous stories, a school of merfish made up of vicious warriors. Back when the humans traversed the seas in their wooden ships- no match for the careful planning and years of practiced skill of merfish- the ___ would sink them by the _handful (?)_, hunting the humans as they were hunted. That practice has since died out, but the ___ live on in legends such as these. ",
-    "question2": "“Supposedly, when the __ would sink a ship with lots of human goods in them- riches from wars and conflicts we know little of- they would gather up their spoils and transport them to ___. Imagine it- the goods of thousands of ships, accumulating over the years. They say that once word got around about the existence of ___, other merfish started to come around in hopes of ____ while the ___ were out pillaging.” ",
+    "question": "“Who discovered the cave, kept up the traps? Who gave it its’ name? How did the riches of the ocean end up in one place? No one knows. One legend involves the Meomrebi.” ",
+    "question1": "The Meomrebi were part of one of the previous stories, a school of merfish made up of vicious warriors. Back when the humans traversed the seas in their wooden ships- no match for the careful planning and years of practiced skill of merfish- the Meomrebi would sink them by the dozen, hunting the humans as they were hunted. That practice has since died out, but the Meomrebi live on in legends such as these. ",
+    "question2": "“Supposedly, when they would sink a ship with lots of human goods in them- riches from wars and conflicts we know little of- they would gather up their spoils and transport them to Sagandzuri. Imagine it- the goods of thousands of ships, accumulating over the years. They say that once word got around about the existence of Sagandzuri, other merfish started to come around in hopes of getting lucky while the Meomrebi were out pillaging.” ",
     "answers": [{
-      "title": "_______",
+      "title": "It was succsessful enough, in the beginning.",
       "response": 58
     }]
   },
 
 { //this is 58
-    "question": "“The ___ worked better as a group; you need numbers for what they were doing. It just wasn’t practical to expand a number of their forces in protecting the cave. So they started up setting intricate traps, increasing in difficulty the closer you got to the cavern in which the spoils were kept. It’s said that when a ___ died, they returned to ____ in order to protect the ____. Ghosts, their soul, their essence, whatever you want to call it- they journeyed back to continue in death as in life. That’s why, if it’s ever found, the traps will still protect the cave from anyone unworthy.” ",
+    "question": "“The Meomrebi worked better as a group; you need numbers for what they were doing. It just wasn’t practical to expand a number of their forces in protecting the cave. So they started up setting intricate traps, increasing in difficulty the closer you got to the cavern in which the spoils were kept. It’s said that when a Meomrebi died, they returned to Sagandzuri in order to protect the ttreasures. Ghosts, their soul, their essence, whatever you want to call it- they journeyed back to continue in death as in life. That’s why, if it’s ever found, the traps will still protect the cave from anyone unworthy.” ",
     "question1": "Ne paused nir tale, taking a careful sip of jellyfish tea and gauging your reactions. ",
     "question2": "Tsurva snarled, unimpressed. ",
     "answers": [{
@@ -632,7 +641,7 @@
   },
 
 { //this is 59
-    "question": "“That’s complete bullshit. Firstly, we have enough treasures in the ocean, thank you very much. No way ___ is filled only with human garbage. And there’s also no way ghosts are real.” ",
+    "question": "“That’s complete bullshit. Firstly, we have enough treasures in the ocean, thank you very much. No way Sagandzuri is filled only with human garbage. And there’s also no way ghosts are real.” ",
     "question1": "Ne had shrugged cordially. “Like I said, call it whatever you want, but that’s how the legend goes.” ",
     "question2": "“Well it’s a shoddy one.” Tsurva grumbled, ignoring your indignant exclamation. ",
     "answers": [{
@@ -642,7 +651,7 @@
   },
 
 { //this is 60
-    "question": "“Well, you’ll like this last one, Tsurva.” Ne said with a laugh. “It involves ____”. ",
+    "question": "“Well, you’ll like this last one, Tsurva.” Ne said with a laugh. “It involves Dzli”. ",
     "question1": "Tsurva grinned immediately, sharp teeth glinting in the light. ",
     "question2": " ",
     "answers": [{
@@ -653,8 +662,8 @@
 
 { //this is 61
     "question": "Ne was more than happy to indulge the audience. ",
-    "question1": "“As you know, ___ was part of a generation of exceptional explorers. A prideful, competitive bunch. Well, ___, one of ___’s rivals, found ___ in one of xyr many escapades. At the time, it was simply a cave, but ___ liked the challenges it presented, simply based on location. Xe had some friends independently set up the cave with traps, and challenged xyr fellow explorers to one of many frequent competitions. The goal was to obtain an object- the most valuable thing they’d found- and get it safely into the depths of the cave, be the first to do so. Participants would be judged on a number of other things as well, including value of object, mastery over the traps, and size of the object. It was a popular challenge; they indulged in it often, so much so that the cave was soon filled with wonders. Eventually, it became the famous ____ of legend. ____ was supposedly a frequent player, and winner.” ",
-    "question2": "“___!” Tsurva roared in approval.  ",
+    "question1": "“As you know, Dzli was part of a generation of exceptional explorers. A prideful, competitive bunch. Well, Matsi, one of Dzli’s rivals, found Sagandzuri in one of xyr many escapades. At the time, it was simply a cave, but Matsi liked the challenges it presented, simply based on location. Xe had some friends independently set up the cave with traps, and challenged xyr fellow explorers to one of many frequent competitions. The goal was to obtain an object- the most valuable thing they’d found- and get it safely into the depths of the cave, be the first to do so. Participants would be judged on a number of other things as well, including value of object, mastery over the traps, and size of the object. It was a popular challenge; they indulged in it often, so much so that the cave was soon filled with wonders. Eventually, it became the famous Sagandzuri of legend. Dzli was supposedly a frequent player, and winner.” ",
+    "question2": "“Dzli the mighty!” Tsurva roared in approval. ",
     "answers": [{
       "title": "You all laughed. ",
       "response": 62
@@ -664,7 +673,7 @@
 { //this is 62
     "question": "Having finished nir stories, and you having fashioned the shell to nir liking, the trader bid you goodbye. ",
     "question1": "In nir absence, you were suddenly aware of the quiet of the ocean. ",
-    "question2": "Tsurva hadn’t seemed to notice, swept up in the ___ of ___. ",
+    "question2": "Tsurva hadn’t seemed to notice, swept up in the grandeur of the legends. ",
     "answers": [{
       "title": " As you parted ways, you couldn’t help but feel something had changed. ",
       "response": 63
@@ -672,8 +681,8 @@
   },
 
 { //this is 63
-    "question": "In the days after the trader’s visit, mentions of __the cave__ started popping up everywhere. Like when you learn something new, and suddenly you could see traces of it everywhere. ",
-    "question1": "Just as ne had said, the legends of how _cave_ came to be were abundant, and varied. But everyone could agree that there were wonders in that cave, the likes of which had your fingers twitching. ",
+    "question": "In the days after the trader’s visit, mentions of Sagandzuri started popping up everywhere. Like when you learn something new, and suddenly you could see traces of it everywhere. ",
+    "question1": "Just as ne had said, the legends of how the cave came to be were abundant, and varied. But everyone could agree that there were wonders in that cave, the likes of which had your fingers twitching. ",
     "question2": "You try not to pay too much attention to the rumors, leaving them as just that. ",
     "answers": [{
       "title": "Tsurva seeks them out. ",
@@ -682,7 +691,7 @@
   },
 
 { //this is 64
-    "question": "She talks of _explorer__ fairly often, but that’s normal. ",
+    "question": "She talks of Dzli fairly often, but that’s normal. ",
     "question1": "Then she starts exploring-- small things, first bringing you gifts of shells, unusual fish, shiny trinkets. As her skills increase, so does the value in your gifts. ",
     "question2": "You don’t start to worry until she leaves for longer periods of time, returning with new cuts and injuries. You scold her gently, patch her up, but she just laughs and proudly presents you with more materials. ",
     "answers": [{
@@ -692,7 +701,7 @@
   },
 
 { //this is 65
-    "question": "Talks of _explorer_ morph into talks of _cave_. Often, these follow several lines of discussion; the prestige in finding and traversing ___. The treasures you could have at your disposal. The excitement of finding a thing of legend, of sharing it with the world. ",
+    "question": "Talks of Dzli morph into talks of Sagandzuri. Often, these follow several lines of discussion; the prestige in finding and traversing the cave. The treasures you could have at your disposal. The excitement of finding a thing of legend, of sharing it with the world. ",
     "question1": "You can’t lie- it had thrilled you in equal measures. But out of the two of you, you’d always been the more cautious one, and you urged Tsurva to be careful in her journeys. You worried that, in her excitement, she would become careless one day. ",
     "question2": "She already had the wounds to match. ",
     "answers": [{
@@ -712,11 +721,11 @@
   },
 
 { //this is 67
-    "question": "She had found ___, or at least what she thought was ___. Her arm had caught in one of the traps, and-- well. All that was left now was part of her forearm. ",
+    "question": "She had found Sagandzuri, or at least what she thought was the cave. Her arm had caught in one of the traps, and-- well. All that was left now was part of her forearm. ",
     "question1": "You hadn’t know what to say. You had sat inside your house with her, held her shaking body, and the sea felt still once more. ",
-    "question2": "She promised not to return to __cave_. ",
+    "question2": "She promised not to return to Sagandzuri. ",
     "answers": [{
-      "title": "Talk of _cave_ stopped. ",
+      "title": "Talk of the cave stopped. ",
       "response": 68
     }]
   },
@@ -734,7 +743,7 @@
 { //this is 69
     "question": "You fall into a comfortable routine. ",
     "question1": "Tsurva and Sasa go out to explore, with Ronen in tow. You spend the days of their absence with traders, basking in their company and their offerings while working with the materials your friends bring you. When they come back- with more spoils- you fuss over them, making them food, listening to their accounts of what happened. They’ll take a break from exploring, either to look for new leads or just to spend time at home.  ",
-    "question2": "As much as you love __like,, getting gifts and stuff__, this is your favorite part. ",
+    "question2": "As much as you love the gifts, this is your favorite part. ",
     "answers": [{
       "title": "You miss them when they’re gone. You worry. ",
       "response": 70
@@ -762,7 +771,7 @@
   },
 
 { //this is 72
-    "question": "“ULA!” Tsurva _roars_, hoisting her arm up in greeting. The bag in her fist swings around wildly, but Ronen ducks swiftly out of the way. He turns to smile and wave at you, and Sasa nods, offering up a rare grin. ",
+    "question": "“ULA!” Tsurva roars, hoisting her arm up in greeting. The bag in her fist swings around wildly, but Ronen ducks swiftly out of the way. He turns to smile and wave at you, and Sasa nods, offering up a rare grin. ",
     "question1": "You swim out to them eagerly, tackling all three in a big hug. ",
     "question2": "“You assholes sure left quietly this time around.” ",
     "answers": [{
@@ -772,7 +781,7 @@
   },
 
 { //this is 73
-    "question": "You part from them slowly, eyes narrowed in suspicion, and finally register the sheer amount of __ they’re carrying. ",
+    "question": "You part from them slowly, eyes narrowed in suspicion, and finally register the sheer amount of treasures they’re carrying. ",
     "question1": "“That’s a lot of loot.” ",
     "question2": "Sasa’s eyes meet Ronen’s, but neither say anything. Tsurva grins at you, but it’s slightly strained. ",
     "answers": [{
@@ -786,7 +795,7 @@
     "question1": "You’re conscious of the sea’s silence now,  like eyes on the back of your neck. ",
     "question2": "Anger and fear mount in you, but you try to shove them down. ",
     "answers": [{
-      "title": "You ___close the door ? Or is it different under the sea__ softly, facing away from them. ",
+      "title": "You close the door softly, facing away from them. ",
       "response": 75
     }]
   },
@@ -796,7 +805,7 @@
     "question1": "There’s a beat of silence, and your fingers itch. ",
     "question2": "You hear her sigh deeply before she speaks.  ",
     "answers": [{
-      "title": "“_____” ",
+      "title": "“Sagandzuri.” ",
       "response": 76
     }]
   },
@@ -804,170 +813,175 @@
 { //this is 76
     "question": "There’s something in the way you whirl around that makes Ronen flinch, makes Sasa’s hand reflexively move towards hir weapon.  ",
     "question1": "“You <em> promised </em> me you’d never go back!”  ",
-    "question2": " ",
+    "question2": "“Hear me out” She says, hand raised in warning. ",
     "answers": [{
-      "title": " ",
-      "response": 1000
+      "title": "Calm yourself down",
+      "response": 77
     }]
   },
 
 { //this is 77
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "You still yourself and close your eyes, tensing your entire body before relaxing. It’s a tactic you use when your anger gets ahead of you- a way for your body to release your intense emotions. Your friends wait patiently until you open your eyes once more. ",
+    "question1": "“Alright. I’m listening. I hope you have a good explanation.”",
+    "question2": "“Thank you.” Tsurva says, swimming up to you and hesitantly taking your hand. ",
     "answers": [{
-      "title": " ",
+      "title": "Let her (platonic). ",
       "response": 78
-    }]
+    },
+    {
+      "title": "Let her (romantic). ",
+      "response": 85
+    }
+    ]
   },
 
 { //this is 78
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "You let her, squeezing her hand in reassurance. You’re still angry, but that anger comes from your love for her. ",
+    "question1": "“I’m sorry I broke our promise. And that I... deceived you. It’s just that I.. I <em>had</em> to, Ula.” ",
+    "question2": "“<em> Why? </em>” ",
     "answers": [{
-      "title": " ",
+      "title": "You can’t understand it. ",
       "response": 79
     }]
   },
 
 { //this is 79
-    "question": " ",
-    "question1": " ",
+    "question": "She looks down at your hands, gathering up her words. It’s strange seeing her this hesitant, so you make an effort to relax. To put her at ease. ",
+    "question1": "“I don’t know how to explain it, exactly. Ever since that night...” You flinch at the memory of her despair. “... it feels like I’ve been swimming away from Sagandzuri, like I’ve been letting my fear lead me blindly. Got tired of it. Just... felt like it was time to face it.” ",
     "question2": " ",
     "answers": [{
-      "title": " ",
+      "title": "“Why didn’t you <em> tell </em> me?” ",
       "response": 80
     }]
   },
 
 { //this is 80
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "You’re hurt by all the secrecy. Hurt that Sasa and Ronen went along with it. ",
+    "question1": "Ronen swims up to you and Tsurva, placing a flipper on her shoulder. Then, gently; ",
+    "question2": "“Ula, you’re completely unapproachable when it comes to Sagandzuri. Tsurva <em> tried </em> bringing it up a couple of times, but lost her nerve.” ",
     "answers": [{
-      "title": " ",
+      "title": "Tsurva looks to the side at this, put off by the admission.  ",
       "response": 81
     }]
   },
 
 { //this is 81
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "“You're my best friend. Your opinions matter to me. But I had to do this. Didn’t wanna turn tail.” ",
+    "question1": "It takes you a minute to process this, to come to terms with it. ",
+    "question2": "“I don’t really get it, but... I should have supported you, if that’s what you want.” ",
     "answers": [{
-      "title": " ",
+      "title": "Everyone’s relief is palpable.",
       "response": 82
     }]
   },
 
 { //this is 82
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "“But!”",
+    "question1": "They tense up at the sudden sharpness of your tone. ",
+    "question2": "“Never lie to me again. Never deceive me like this. I’ll make an effort to be less...aggressive about things that scare me, but you can’t hide things like this from me. You’re my friends, and I love you all. I care for you all deeply.” ",
     "answers": [{
-      "title": " ",
+      "title": "Sasa cracks one of hir rare smiles. ",
       "response": 83
     }]
   },
 
 { //this is 83
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "“We promise.” ",
+    "question1": "You look pointedly at Tsurva, who chuckles and smiles sheepishly at you. ",
+    "question2": "“Promise. Won’t break this one, either.” ",
     "answers": [{
-      "title": " ",
+      "title": " “You better not.” You warn. ",
       "response": 84
     }]
   },
 
 { //this is 84
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "She can’t help it- she brings you into a suffocating hug. Ronen laughs, and joins in, pulling Sasa along. It’s so familiar, so welcome. You hug them back just as tightly. After a minute, Tsurva speaks up. ",
+    "question1": " “Ula?” ",
+    "question2": "  “Hmm?” ",
     "answers": [{
-      "title": " ",
-      "response": 85
+      "title": "“Don’t kill me for this... but what do you think of going through Sagandzuri?” ",
+      "response": 101
     }]
   },
 
 { //this is 85
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "You let her, feel your anger dwindle- after all, she’s here. She’s safe. ",
+    "question1": "Your eyes flicker briefly to her missing arm, and you can’t stop yourself from tightening your hold on her. ",
+    "question2": "“I’m sorry I broke our promise. And that I... deceived you. It’s just that I.. I <em>had</em> to, Ula.” ",
     "answers": [{
-      "title": " ",
+      "title": " “<em> Why? </em>” ",
       "response": 86
     }]
   },
 
 { //this is 86
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "She looks down and delicately runs her clawed finger over your palm. It makes you shiver. ",
+    "question1": "“I don’t know how to explain it, exactly. Ever since that night...” You flinch at the memory of her despair. “... it feels like I’ve been swimming away from Sagandzuri, like I’ve been letting my fear lead me blindly. Got tired of it. Just... felt like it was time to face it.” ",
+    "question2": "You can’t help it. The words leave your mouth, lay your intentions bare. ",
     "answers": [{
-      "title": " ",
+      "title": "“Without me.” ",
       "response": 87
     }]
   },
 
 { //this is 87
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "You can’t hold Tsurva’s stare, earnest as it is. Her being this openly vulnerable, holding you, speaking to you softly- it disarms you. ",
+    "question1": "“You’ve never explored before, Ula. I... If you had gotten...” She swallows thick. “I wasn’t gonna chance it.” ",
+    "question2": "“Just your life.” You glance behind her. “The lives of our friends.” ",
     "answers": [{
-      "title": " ",
+      "title": " Sasa’s ears flap indignantly. ",
       "response": 88
     }]
   },
 
 { //this is 88
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "“We came on our own accord.” ",
+    "question1": "Ronen swims up to you and Tsurva, placing a flipper on her shoulder. Then, gently; ",
+    "question2": "“Ula, you’re completely unapproachable when it comes to Sagandzuri. Tsurva <em> tried </em> bringing it up a couple of times, but lost her nerve.” ",
     "answers": [{
-      "title": " ",
+      "title": "Tsurva looks to the side at this, put off by the admission.  ",
       "response": 89
     }]
   },
 
 { //this is 89
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "“You.... your... opinions matter to me. But I had to do this. Didn’t wanna turn tail.” ",
+    "question1": " You stay quiet for a minute. ",
+    "question2": "“Okay.” The release of tension is palpable. ",
     "answers": [{
-      "title": " ",
+      "title": "“But!” ",
       "response": 90
     }]
   },
 
 { //this is 90
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "Tsurva tenses up at the sudden sharpness of your tone. ",
+    "question1": "“Never lie to me again. Never deceive me like this. I’ll make an effort to be less...aggressive about things that scare me, but you can’t hide things like this from me. You’re my friends, and I love you all. I care for you all deeply.” ",
+    "question2": "Sasa cracks one of hir rare smiles. ",
     "answers": [{
-      "title": " ",
-      "response": 0
+      "title": " “We promise.” ",
+      "response": 91
     }]
   },
 
 { //this is 91
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "You look pointedly at Tsurva, who smiles sheepishly at you. ",
+    "question1": "“Promise. Won’t break this one, either.” ",
+    "question2": "“You better not.” You warn.  ",
     "answers": [{
-      "title": " ",
-      "response": 0
+      "title": "She can’t help it- she brings you into a suffocating hug. ",
+      "response": 92
     }]
   },
 
 { //this is 92
-    "question": " ",
-    "question1": " ",
-    "question2": " ",
+    "question": "It’s so familiar, so welcome. You hug her back just as tightly. ",
+    "question1": "“Ula?” ",
+    "question2": "“Hmm?” ",
     "answers": [{
-      "title": " ",
-      "response": 0
+      "title": "“Don’t kill me for this... but what do you think of going through Sagandzuri with me?” ",
+      "response": 101
     }]
   },
 
@@ -1042,21 +1056,21 @@
   },
 
 { //this is 100
-    "question": " ",
-    "question1": " ",
+    "question": "More routes coming soon!",
+    "question1": "You can play Act One of Adam's route or Act One of Ula's route.",
     "question2": " ",
     "answers": [{
-      "title": " ",
+      "title": "Click here to start over.",
       "response": 0
     }]
   },
 
 { //this is 101
-    "question": " ",
+    "question": "This is the end of Act One. Please click on the first seashell below to go to Act Two.",
     "question1": " ",
     "question2": " ",
     "answers": [{
-      "title": " ",
+      "title": "Or you can click here to start over!",
       "response": 0
     }]
   },

@@ -1,13 +1,12 @@
 * {box-sizing: border-box;}
 
 html {
-  cursor: url("underwater/favicon1.ico"), pointer;  
   cursor: url("underwater/favicon.ico"), default; 
   scroll-behavior: smooth;  
 }
 
 body {
-	background-color: #3B8C8C;
+	background-color: #ACBF84;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center right;
@@ -26,7 +25,7 @@ body {
 
 	h1 {margin: 5px; color: #A6173D;}
 
-	h2 {margin: 5px; color: #A6173D;}
+	h2 {margin: 5px; color: #253340;}
 
 	p {margin: 5px; padding: 7px; line-height: 1.5em;}
 
@@ -51,9 +50,12 @@ a {
 }
 a:hover {
   color: #33A645;
+  cursor: url("underwater/favicon1.ico"), pointer;
+
 }
 
-video {width: 100%;	height: 100%;}
+video {width: 100%;	height: 100%; cursor: url("underwater/favicon1.ico"), pointer;
+}
 
 .corner {
 	bottom: 0px;
@@ -105,58 +107,8 @@ video {width: 100%;	height: 100%;}
 
 }
 
-
-/* 
-#outer_wrapper {  
-    overflow: scroll;
-    overflow-y: hidden;
-    display: hidden;
-    width:100%;
-}
-#outer_wrapper #inner_wrapper {
-    width: 3000px; 
-}
-#outer_wrapper #inner_wrapper div.box { 
-    height:463.5px;
-    float: left;
-    margin: 0 0 0 0;
-}
-
-#outer_wrapper #inner_wrapper div.box1 { 
-    width: 947.25px;
-    height:463.5px;
-    float: left;
-    margin: 0 0 0 10px;
-    background-color: #B8A7DE;
-}
-
-#outer_wrapper #inner_wrapper div.box2 { 
-    width: 579.375px;
-    height: 463.5px;
-    float: left;
-    margin: 0 0 0 10px;
-    background-color: #B8A7DE;
-
-}
-
-#outer_wrapper #inner_wrapper div.box3 { 
-    width: 300px;
-    float: left;
-    margin: 0 0 0 10px;
-}
-
-#code {
-	width: 3600px;
-	display: grid;
-	padding-top: 1em;
-	grid-template-columns: repeat(6, 600px);
-	background-color: #09998F;
-		}
-*/
-
 div {border: 1px; text-align: center; }
 
-#icon:hover {-webkit-transform: scaleX(-1); transform: scaleX(-1); }
 
 .video {width: 25%; margin: 10px;}
 
@@ -185,11 +137,19 @@ div {border: 1px; text-align: center; }
 	margin: 2em;
 	width: 1200px;
 	grid-template-columns:  repeat(3, auto);
-	grid-template-rows: repeat(3, auto);
+	grid-template-rows: repeat(6, auto);
 	justify-content: center;
 }
 
 #art div.box1 { 
 	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column-end: 4;
+}
+
+#art div.box2 { 
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
 }
